@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../../../assets/font/open-sans-v18-latin-regular.woff2') format('woff2'), 
+         url('../../../assets/font/open-sans-v18-latin-regular.woff') format('woff'); 
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local(''),
+         url('../../../assets/font/open-sans-v18-latin-700italic.woff2') format('woff2'), 
+         url('../../../assets/font/open-sans-v18-latin-700italic.woff') format('woff'); 
+  }
+
+.formControl.error input,
+.formControl.error textarea
+{
+    border: solid  2px;
+    color: #EE4141;
+}
+.formControl.error span
+{
+    color: #EE4141;
+    border-top: 25px;
+    font-family: font-face;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #EE4141;
+}
+
+.error{
+    /*padding-bottom: 10px;
+    background: #F5F5F5;
+    box-sizing: border-box;
+    font-family: font-face;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #333333;*/
+}
+input.login {
+    width:328px;
+    height:36px;
+    background: #FFFFFF;
+    border: 1px solid #D6DCE9;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-family: font-face;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+color: #6879BB;
+}
+input.login:hover {
+    width:328px;
+    height:36px;
+    border: 1px solid #415FD5;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+input.login:active {
+    width:328px;
+    height:36px;
+    background: #FFFFFF;
+    border: 1px solid #415FD5;
+    box-sizing: border-box;
+    border-radius: 4px;
+}

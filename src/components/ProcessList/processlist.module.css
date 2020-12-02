@@ -1,0 +1,96 @@
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../../assets/font/open-sans-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../assets/font/open-sans-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-700italic - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+       url('../../assets/font/open-sans-v18-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../assets/font/open-sans-v18-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.pla{
+/*box-sizing: border-box;*/
+padding-left: 22px;
+padding-right: 22px;
+height:274px;
+background: #FFFFFF;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+border-radius: 2px;
+
+}
+.textName{
+  font-family:font-face;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 30px;
+display: flex;
+align-items: center;
+color: #6879BB;
+top:50%;
+transform: translate(0,50%);
+}
+.textProcess{
+  font-family: font-face;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+display: flex;
+align-items: center;
+color: #6879BB;
+top:50%;
+transform: translate(0,150%);
+right: 25px;;
+}
+.numberOfScenarios{
+  font-family: font-face;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 35px;
+display: flex;
+align-items: center;
+color: #535374;
+top:50%;
+transform: translate(0,200%);
+}
+.miniText{
+  font-family: font-face;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+display: flex;
+align-items: center;
+color: #999999;
+}
+.textScripts{
+font-family: font-face;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+display: flex;
+align-items: center;
+color: #535374;
+}
+.textMoment{
+  font-family: font-face;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+display: flex;
+align-items: center;
+color: #333333;
+}

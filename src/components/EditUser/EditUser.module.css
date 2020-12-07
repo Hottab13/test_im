@@ -1,70 +1,82 @@
-
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Open Sans'),
-         url('../../assets/font/open-sans-v18-latin-regular.woff2') format('woff2'), 
-         url('../../assets/font/open-sans-v18-latin-regular.woff') format('woff'); 
-  }
-
-/*@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: 700;
-    src: local(''),
-         url('../../assets/font/open-sans-v18-latin-700italic.woff2') format('woff2'), 
-         url('../../assets/font/open-sans-v18-latin-700italic.woff') format('woff'); 
-}*/
-
 .wrapper{
-    background-image:url(../../assets/SVG/bgedituser.svg); 
-    background-size:cover;
-    height:1064px;
+background-image:url(../../assets/SVG/bgedituser.svg); 
+background-size: 100%, 100%, contain;
+background-repeat: no-repeat;
+    background-position: right top;
+   /* background-attachment: fixed;
+/*height:1064px;*/
 }
+/*меню*/
 .menu{
-    height: 60px;
-    margin-left: 0; margin-right: 0;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 10px rgba(104, 121, 187, 0.1);
+background: #FFFFFF;
+box-shadow: 0px 1px 10px rgba(104, 121, 187, 0.1);
+height:60px;
+position: relative;
+  /*left: 0;
+  top: 0;*/
 }
-.menuText{
-    width:525,09px;
-    height: 24px;
-    left: 0%;
-    top:50%;
-    transform: translate(0,60%);
-    /*font-family: "Open Sans";*/
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-    color: #6879BB;
+.menuMod{
+    z-index: 100;
+    width: 224px;
+    height:1064px;
+    background: #404064;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.3);  
+}
+.menuModMask{
+    z-index: 100;
+    background: #20262B;
+    opacity: 0.5;
+    /*background-image:url(../../assets/SVG/mask.svg); */
+    background-size: 100%, 100%, contain;
+    background-repeat: no-repeat;
+    /*background-position: right top;*/
+    background-attachment: fixed;
+}
+.menuBackground{
+    background: #404064;
+    /*height:1064px;*/
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
 }
 .menuIcon{ 
-    width: 24px;
-    height: 24px;
-    left: 0%;
-    right: 0%;
-    margin: 0 auto;
-    top:50%;
-    transform: translate(0,50%);
-    background: rgba(255, 255, 255, 0.01);
+top:50%;
+transform: translate(0,100%);
+margin-left: 13px;
 }
+P.menuText{
+font-family: "Open Sans";
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+display: flex;
+align-items: center;
+color: #6879BB;
+}
+ .menuModText{
+font-family: "Open Sans";
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+ } 
+/*меню*/
 .editForm{
-   /* width: 1322px;*/
-    height: 288px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
+/*margin-left:52px;
+/*margin-right:52px;*/
+height: 288px;
+background: #FFFFFF;
+/*box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);*/
+border-radius: 2px;
 }
 .name{
-width:840,5px;
+/*width:840,5px;*/
 height:48px;
-font-family:" ";
+font-family:"Open Sans";
 font-style: normal;
 font-weight: bold;
 font-size: 26px;
@@ -73,59 +85,50 @@ display: flex;
 align-items: center;
 color: #404064;
 top:50%;
-    transform: translate(0,50%);
+transform: translate(0,50%);
 }
+/*кастомные кнопки*/
 button.button:default {
     width: 116px;
     height: 36px;
     background: #FFCE0C;
+    border-color:#FFCE0C;
     border-radius: 4px;
-
-    font-family: font-face;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 16px;
-  
     top:50%;
     transform: translate(0,80%);
-    margin-left: auto;
-  margin-right: 0;
+    float: right;
   } 
 button.button:hover {
     width: 116px;
     height: 36px;
     background: #FFD73B;
+    border-color:#FFCE0C;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-
-    font-family: font-face;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 16px;
-    
    }
 button.button:active {
     width: 116px;
     height: 36px;
     background: #FFCE0C;
+    border-color:#FFCE0C;
     border: 1px solid #FFFBEA;
     box-sizing: border-box;
     box-shadow: 0px 1px 10px #FFD73B;
     border-radius: 4px;
-
-    font-family: font-face;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 16px;
   }
-
- .menuMod{
-    width: 224px;
-    height: 168px;
-    
-    background: #404064;
-    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.3);
- } 
+/*кастомные кнопки*/

@@ -14,7 +14,7 @@ let initionalState = {
     isFetching:false,
     isAuth:false,
     token:null as string | null,
-    updete:false
+    renewalEditUser:false
 }
 
 const authReducer=(state=initionalState,action:ActionType):initionalStateType=> {
@@ -23,6 +23,11 @@ const authReducer=(state=initionalState,action:ActionType):initionalStateType=> 
             return {
                 ...state,
                 ...action.payload,
+            }  
+        case "SET_RENEWAL_EDIT_USER":
+            return {
+                ...state,
+                ...action.renewalEditUser,
             }   
             default:
             return state;
@@ -30,37 +35,39 @@ const authReducer=(state=initionalState,action:ActionType):initionalStateType=> 
 }
 
  export const actions={
-    setAuthUserData:(userId:number | null, firstName:string | null,email:string | null,secondName:string | null, isAuth:boolean, token:string | null,updete:boolean)=> ({type:"SET_USER_DATA", 
-        payload:{userId,firstName,email,secondName,isAuth,token,updete }} as const),
+    setAuthUserData:(userId:number | null, firstName:string | null,email:string | null,secondName:string | null, isAuth:boolean, token:string | null )=> ({type:"SET_USER_DATA", 
+        payload:{userId,firstName,email,secondName,isAuth,token }} as const),
+    setRenewalEditUser:( renewalEditUser:boolean)=> ({type:"SET_RENEWAL_EDIT_USER", 
+        renewalEditUser:{renewalEditUser }} as const)
 }
 
 
 export const loginUser = (email:string ,password:string ):ThunkActionType=> 
     async(dispatch,getState) =>{
-        let respons = await userAPI.getAuthLogin(email,password);
+        const respons = await userAPI.getAuthLogin(email,password)
             if(respons.login){
-                console.log(respons.login) 
+                
                 const {id,firstName,email,secondName} = respons.login.user
                 const token = respons.login.token
-                dispatch(actions.setAuthUserData(id,firstName,email,secondName, true,token,false ))
+                dispatch(actions.setAuthUserData(id,firstName,email,secondName, true,token ))
             } else{
-                dispatch(stopSubmit('login',{_error:respons}));
+                console.log(respons.message) 
+                dispatch(stopSubmit('login',{_error:respons.graphQLErrors[0].message}));
             }
 }
 export const editUser = (firstName:string, secondName:string,email:string, password:string  ):ThunkActionType=> 
     async(dispatch,getState) =>{
         const id =getState().auth.userId
         let respons = await userAPI.getEditUserLogin(id,firstName, secondName,email, password);
-
             if(respons.editUser){
                 console.log(respons.editUser)
                     const {id,firstName,email,secondName} = respons.editUser
                     const token = getState().auth.token
-                dispatch(actions.setAuthUserData(id,firstName,email,secondName, true, token,true ))
+                dispatch(actions.setAuthUserData(id,firstName,email,secondName, true, token ))
+                dispatch(actions.setRenewalEditUser( true ))
             } else{
-             
-                console.log(respons)
-                //dispatch(stopSubmit('login',{_error:respons.err}));
+                console.log(respons.message) 
+                dispatch(stopSubmit('useredit',{_error:respons.graphQLErrors[0].message}));
             }
 }
 export default authReducer

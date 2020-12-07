@@ -1,21 +1,3 @@
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../../../assets/font/open-sans-v18-latin-regular.woff2') format('woff2'), 
-         url('../../../assets/font/open-sans-v18-latin-regular.woff') format('woff'); 
-  }
-  
-  @font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: 700;
-    src: local(''),
-         url('../../../assets/font/open-sans-v18-latin-700italic.woff2') format('woff2'), 
-         url('../../../assets/font/open-sans-v18-latin-700italic.woff') format('woff'); 
-  }
-
 .formControl.error input,
 .formControl.error textarea
 {
@@ -26,7 +8,7 @@
 {
     color: #EE4141;
     border-top: 25px;
-    font-family: font-face;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -56,8 +38,7 @@ input.login {
     border: 1px solid #D6DCE9;
     box-sizing: border-box;
     border-radius: 4px;
-
-    font-family: font-face;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

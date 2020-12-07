@@ -1,71 +1,43 @@
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-         url('../../assets/font/open-sans-v18-latin-regular.woff2') format('woff2'), 
-         url('../../assets/font/open-sans-v18-latin-regular.woff') format('woff'); 
-  }
-  
-  @font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: 700;
-    src: local(''),
-         url('../../assets/font/open-sans-v18-latin-700italic.woff2') format('woff2'), 
-         url('../../assets/font/open-sans-v18-latin-700italic.woff') format('woff'); 
-  }
-  
-
 .wrapper{
-    background-image:url(../../assets/SVG/bgcolor.svg); 
-    background-size:cover;
-    height:1064px;
+background-image:url(../../assets/SVG/bgcolor.svg); 
+background-size: 100%, 100%, contain;
+background-repeat: no-repeat;
+background-position: right top;
+background-attachment: fixed;
 }
-
 .login_wr{
-    width:424px;
-    height: 656px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
-    left: 0%;
-    right: 0%;
-    margin: 0 auto;
+width:424px;
+height: 656px;
+background: #FFFFFF;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+border-radius: 2px;
+left: 0%;
+right: 0%;
+margin: 0 auto;
 }
-
 .logo{
-    width: 150.51px;
-    height: 47.88px;
-    left: 607px;
-    top: 32px;
-    left: 0%;
-    right: 0%;
-    margin: 0 auto;
+width: 150.51px;
+height: 47.88px;
+left: 607px;
+top: 32px;
+left: 0%;
+right: 0%;
+margin: 0 auto;
 }
-
 .centrBut{
-    width: 328px;
-    height: 36px;
-    left: 0%;
-    right: 0%;
-    margin: 0 auto;
-    font-family: font-face;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 19px;
-display: flex;
+width: 328px;
+height: 36px;
+left: 0%;
+right: 0%;
+margin: 0 auto;
 align-items: center;
-
 color: #CCCCCC;
 }
-
 .singup{
 width: 140px;
 height: 19px;
-padding-left: 33px;
-font-family: font-face;
+padding-left: 48px;
+font-family: "Open Sans";
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
@@ -73,66 +45,83 @@ line-height: 19px;
 display: flex;
 align-items: center;
 color: #3167BA;
+text-decoration: none;
 }
-
 .sing{
-    width: 230px;
-    height: 19px;
-    padding-left: 33px;
-    font-family: font-face;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    color: #3167BA;
-    }
-
-button.button10:default {
-    background: #FFCE0C;
-    border-radius: 4px;
-    width: 328px;
-    height: 36px;
-
-    font-family: font-face;
+font-family: "Open Sans";
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/*margin-re: 60px;*/
+color: #3167BA; 
+text-decoration: none; 
+/*float: left;*/
+}
+.singPlank{
+font-family: "Open Sans";
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+}
+/*кастомизация кнопок*/
+button.button:default {
+background: #FFCE0C;
+border-color:#FFCE0C;
+border-radius: 4px;
+width: 328px;
+height: 36px;
+font-family: "Open Sans";
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
 line-height: 16px;
-
+outline-style: none;
 align-items: center;
 text-align: center;
-
 color: #333333;
-
-  } 
-button.button10:hover {
-    background: #FFD73B;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    width: 328px;
-    height: 36px;
-   }
-button.button10:active {
-    background: #FFCE0C;
-    border: 1px solid #FFFBEA;
-    box-sizing: border-box;
-    box-shadow: 0px 1px 10px #FFD73B;
-    border-radius: 4px;
-    width: 328px;
-    height: 36px;
-  }
-
-  .error{
-    background: #FFE9DB;
-    height: 96px;
-    width:404px;
-  }
-  .signText{
-      
-font-family: font-face;
+} 
+button.button:hover {
+background: #FFD73B;
+border-color:#FFCE0C;
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+width: 328px;
+height: 36px;
+outline-style: none;
+}
+button.button:active {
+background: #FFCE0C;
+border-color:#FFCE0C;
+border: 1px solid #FFFBEA;
+box-sizing: border-box;
+box-shadow: 0px 1px 10px #FFD73B;
+border-radius: 4px;
+width: 328px;
+height: 36px;
+}
+/*кастомизация кнопок*/
+.error{
+background: #FFE9DB;
+height: 96px;
+width:424px;
+}
+.errorText{
+top:50%;
+transform: translate(0,-50%);
+padding-left: 120px;
+font-family: "Open Sans";
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+display: flex;
+align-items: center;
+color: #333333;
+}
+.signText{   
+font-family: "Open Sans";
 font-style: normal;
 font-weight: bold;
 font-size: 18px;
@@ -140,4 +129,26 @@ line-height: 25px;
 display: flex;
 align-items: center;
 color: #404064;
-  }
+}
+/*кастомизация checkbox */
+input[type="checkbox"] {
+display: none;
+}
+label {
+}
+label:before {
+content: " ";
+border-image: initial;
+width: 12px;
+height: 5px;
+display: inline-block;
+}
+input:checked + label:before {
+background-image:url(../../assets/icon/EyeVisible.svg ); 
+background-size:cover;
+}
+input + label:before {
+background-image:url(../../assets/icon/EyeInvisible.svg); 
+  background-size:cover;
+}
+/*кастомизация checkbox */

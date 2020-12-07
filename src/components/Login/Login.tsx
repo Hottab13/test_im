@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, Redirect } from 'react-router-dom'
 import { InjectedFormProps, reduxForm } from 'redux-form'
@@ -9,52 +9,42 @@ import cl from "./Login.module.css"
 import { AppStateType } from '../../redux/ReduxStore'
 import logo from "../../assets/logo/logo.svg"
 import { Container, Row, Col } from 'react-grid-system'; 
+import errorIcon from "../../assets/icon/error.svg"
 
-type LoginFormOwnProps={
-   // captchaUrl:string |null
-}
+type LoginFormOwnProps={}
 const maxLenght = maxLengthCreator(30)
-const LoginForm:React.FC<InjectedFormProps<LoginFormValueType,LoginFormOwnProps>& LoginFormOwnProps> =({handleSubmit, error }) =>{
-return (
-<form onSubmit={handleSubmit}>
+const LoginForm:React.FC<InjectedFormProps<LoginFormValueType,LoginFormOwnProps>& LoginFormOwnProps> =({handleSubmit, error,...props }) =>{
+return <form onSubmit={handleSubmit}>
 <Container fluid>
     <Row align="end" style={{ height: '72px' }}>
-        <Col >
         <div className={cl.centrBut}>
             {createField<LoginFormValueTypeKey>
             ("Электронная почта","login",[requiredField, maxLenght],InputControl)}
         </div>
-        </Col>
-        </Row >
-        <Row align="end" style={{ height: '53px' }}>
-         <Col >
+    </Row >
+    <Row align="end" style={{ height: '53px' }}>
         <div className={cl.centrBut}>
-            {createField<LoginFormValueTypeKey>
+        {createField<LoginFormValueTypeKey>
             ("Пароль","pass",[requiredField, maxLenght],InputControl,{type:"password"})}
         </div>
-        </Col>
-        </Row>
-        <Row align="end"  style={{ height: '60px' }} >
-        <Col >
-            <div className={cl.centrBut} >
-            <button className={cl.button10}>Войти в систему</button>
-            </div>
-        </Col>
-        </Row>
-        <Row align="end" style={{ height: '37px' }} >
-        <Col  >
-         <div className={cl.singup}><Link to="/signup">Зарегистрироваться</Link></div>
-         </Col>
-         </Row>
-         <Row align="end" style={{ height: '150px'}}>
-        <Col  >
+    </Row>
+    <Row align="end"  style={{ height: '60px' }} >
+        <div className={cl.centrBut} >
+        <button disabled={!props.valid } className={cl.button}>Войти в систему</button>
+        </div>
+    </Row>
+    <Row align="end" style={{ height: '37px' }} >
+         <Link to="/signup" className={cl.singup}>Зарегистрироваться</Link>
+    </Row>
+        <Row align="end" style={{ height: '150px'}}>
         {error &&<div className={cl.error}>
-            Сообщение об ошибке{console.log(error)}</div>}
-        </Col>
+            <img src={errorIcon} style={{paddingLeft:"48px",top:"50%",
+            transform: "translate(0,50%)"}}/>
+            <div className={cl.errorText}>{error}</div></div>}
         </Row>
 </Container>
 </form>
-)}
+}
 const LoginReduxForm = reduxForm<LoginFormValueType,LoginFormOwnProps>({form:'login'})(LoginForm);
 type LoginFormValueType ={
     remember_me:boolean
@@ -72,37 +62,22 @@ const onSubmit = (value:LoginFormValueType)=>{
 if(isAuth){
     return <Redirect to={"/processlist"}/>
 }
-return(
-    <div className={cl.wrapper} >
+return <div className={cl.wrapper} >
 <Container fluid>
-  <Row align="stretch">
-    <Col  >
-    
-        <Row align="center" justify="center"  style={{ height: '112px' }}>
-            <Col md={5}>
-            </Col>
-            <Col md={2}>
-                <div className={cl.logo} >
-                    <img src={logo}/>
-                </div>
-            </Col>
-            <Col md={5}>
-            </Col>
-        </Row>
-        <Row align="stretch" justify="center">
-            <Col md={3}>
-            </Col>
-            <Col md={4} >
-            <div className={cl.login_wr}   >
-                <LoginReduxForm onSubmit={onSubmit}/>
+    <Row align="center" justify="center"  style={{ height: '112px' }}>
+        <Col >
+        <div className={cl.logo} >
+            <img src={logo}/>
+        </div>
+        </Col>
+    </Row>
+    <Row align="stretch" justify="center">
+        <Col>
+            <div className={cl.login_wr}>
+            <LoginReduxForm onSubmit={onSubmit} />
             </div>
-            </Col>
-            <Col md={3}>
-            </Col>
-        </Row>
-   
-    </Col>
-  </Row>
-</Container> 
- </div>
-)}
+        </Col>
+    </Row>
+</Container>
+</div>
+}

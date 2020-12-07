@@ -17,15 +17,15 @@ const processListReducer=(state=initionalState,action:ActionType):InitionalState
         case "SET_PROCESS_LIST":{
             return { ...state, processList:action.processList}  
         }
-        case "TOGGLE_IS_FETING":{
-            return { ...state, isFetching:action.isFeting}// прелоудер
-            }   
+        /*case "TOGGLE_IS_FETING":{
+            return { ...state, isFetching:action.isFeting}
+            }   */
             case "TOGGLE_IS_FOLLOWING_PROGRESS":{
                 return { 
                     ...state, 
                     followingInProgress: action.isFeting ?
                     [...state.followingInProgress, action.userId]
-                    :state.followingInProgress.filter(id => id !== action.userId)// прелоудер
+                    :state.followingInProgress.filter(id => id !== action.userId)
                 }  }
             default:
                 return state

@@ -1,11 +1,10 @@
 import React, { useEffect } from "react"
 //import "./App.css"
-import 'antd/dist/antd.css';
 import { BrowserRouter, Link, Route, Switch, withRouter} from "react-router-dom"
 import { connect, Provider, useDispatch, useSelector } from "react-redux"
 import { compose } from "redux"
 import { initiolizeApp } from "./redux/AppReducer"
-import Loader from "./components/Loader"
+//import Loader from "./components/Loader"
 import store, { AppStateType } from "./redux/ReduxStore"
 import { Login } from "./components/Login/Login"
 import {ApolloClient,createHttpLink,InMemoryCache,ApolloProvider} from "@apollo/client"
@@ -37,9 +36,9 @@ const App:React.FC = (props)=>{
     dispatch(initiolizeApp())
   },[])
 
-  if(!initionalized){
+  /*if(!initionalized){
     return <Loader/>
-  }
+  }*/
   return (
       <Switch>
         <Route exact path='/' render={()=><Login/>}/>

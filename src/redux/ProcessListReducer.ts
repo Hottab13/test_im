@@ -46,10 +46,8 @@ export const getProcessListThunkCreator = ():ThunkActionType =>
     let respons = await userAPI.getProcessList()
     dispatch(action.toggleIsFeting(false))
     if(respons.processList){
-        console.log(respons.login) 
         dispatch(action.setUsers(respons.processList))
     } else{
-        console.log(respons)
         //dispatch(stopSubmit('login',{_error:respons.err}));
     }
 }

@@ -1,21 +1,25 @@
 .formControl.error input,
 .formControl.error textarea
 {
-    border: solid  2px;
+    /*бордер инпута*/
+    border: solid  1px;
     color: #EE4141;
 }
 .formControl.error span
 {
+    /*текст ошибок*/
+    /*position: relative;*/
     color: #EE4141;
-    border-top: 25px;
+    /*border-top: 25px;*/
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
-    display: flex;
-    align-items: center;
-    color: #EE4141;
+    display: flex ;
+    /*align-items: center;*/
+    margin-top: -7px;
+    
 }
 
 .error{
@@ -32,6 +36,7 @@
     color: #333333;*/
 }
 input.login {
+    /*инпут по дефолту*/
     width:328px;
     height:36px;
     background: #FFFFFF;
@@ -45,10 +50,11 @@ input.login {
     line-height: 19px;
     display: flex;
     align-items: center;
-
-color: #6879BB;
+    outline-style: none;
+    color: #6879BB;
 }
 input.login:hover {
+    /*фокус на инпуте*/
     width:328px;
     height:36px;
     border: 1px solid #415FD5;
@@ -56,6 +62,7 @@ input.login:hover {
     border-radius: 4px;
 }
 input.login:active {
+    /*активный инпут*/
     width:328px;
     height:36px;
     background: #FFFFFF;

@@ -51,7 +51,6 @@ export const loginUser = (email:string ,password:string ):ThunkActionType=>
                 const token = respons.login.token
                 dispatch(actions.setAuthUserData(id,firstName,email,secondName, true,token ))
             } else{
-                console.log(respons.message) 
                 dispatch(stopSubmit('login',{_error:respons.graphQLErrors[0].message}));
             }
 }
@@ -60,13 +59,11 @@ export const editUser = (firstName:string, secondName:string,email:string, passw
         const id =getState().auth.userId
         let respons = await userAPI.getEditUserLogin(id,firstName, secondName,email, password);
             if(respons.editUser){
-                console.log(respons.editUser)
                     const {id,firstName,email,secondName} = respons.editUser
                     const token = getState().auth.token
                 dispatch(actions.setAuthUserData(id,firstName,email,secondName, true, token ))
                 dispatch(actions.setRenewalEditUser( true ))
             } else{
-                console.log(respons.message) 
                 dispatch(stopSubmit('useredit',{_error:respons.graphQLErrors[0].message}));
             }
 }

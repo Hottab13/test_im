@@ -30,6 +30,11 @@ if(userName.renewalEditUser){
     setTimeout(deactivEditModeButton, 3000);
     dispatch(actions.setRenewalEditUser (false ))
 }
+const [checkModeButton,setCheckModeButton] =  useState (true)
+//@ts-ignore
+const soldCheckbox = ({ target: { checked } }) => {
+    setCheckModeButton(checked);
+}
 return <form onSubmit={handleSubmit}>
 <Row style={{height:"80px",marginLeft:"7px", marginRight:"7px"}}>
     <Col md={6}  >
@@ -74,7 +79,8 @@ return <form onSubmit={handleSubmit}>
             </Col>
             <Col >
             {createField<LoginFormValueTypeKey>
-            ("Не задано","pass",[requiredField, maxLenght],InputControl,{type:"password"})}
+            ("Не задано","pass",[requiredField, maxLenght],InputControl,checkModeButton?
+            {type:"password",checkModeButton,soldCheckbox}:{checkModeButton,soldCheckbox})}
             </Col>
         </Row>
         <Row align="end" style={{height:"50px"}}>
@@ -83,7 +89,8 @@ return <form onSubmit={handleSubmit}>
             </Col>
             <Col >
             {createField<LoginFormValueTypeKey>
-            ("Не задано ","confirmPassword",[requiredField, matchPass],InputControl,{type:"password"})}
+            ("Не задано ","confirmPassword",[requiredField, matchPass],InputControl,checkModeButton?
+            {type:"password",checkModeButton,soldCheckbox}:{checkModeButton,soldCheckbox})}
             </Col>
         </Row>
         

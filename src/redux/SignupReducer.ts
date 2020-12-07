@@ -28,10 +28,8 @@ export const signupUser = (firstName:string, secondName:string,email:string, pas
     async(dispatch,getState) =>{
         let respons = await userAPI.getSignupLogin(firstName, secondName,email, password);
             if(respons.signup){
-                console.log(respons.signup)
                 dispatch(actions.onSignup(true))
             } else{
-                console.log(respons.message) 
                 dispatch(stopSubmit('signup',{_error:respons.graphQLErrors[0].message}));
             }
 }

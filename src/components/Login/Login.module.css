@@ -32,6 +32,18 @@ right: 0%;
 margin: 0 auto;
 align-items: center;
 color: #CCCCCC;
+  
+}
+.textContainer{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.btn {
+  position: absolute;
+  top: 0px;
+  left: 304px;
+  float: right;
 }
 .singup{
 width: 140px;

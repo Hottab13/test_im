@@ -14,6 +14,11 @@ import errorIcon from "../../assets/icon/error.svg"
 type LoginFormOwnProps={}
 const maxLenght = maxLengthCreator(30)
 const LoginForm:React.FC<InjectedFormProps<LoginFormValueType,LoginFormOwnProps>& LoginFormOwnProps> =({handleSubmit, error,...props }) =>{
+    const [checkModeButton,setCheckModeButton] =  useState (true)
+//@ts-ignore
+const soldCheckbox = ({ target: { checked } }) => {
+    setCheckModeButton(checked);
+}
 return <form onSubmit={handleSubmit}>
 <Container fluid>
     <Row align="end" style={{ height: '72px' }}>
@@ -25,7 +30,8 @@ return <form onSubmit={handleSubmit}>
     <Row align="end" style={{ height: '53px' }}>
         <div className={cl.centrBut}>
         {createField<LoginFormValueTypeKey>
-            ("Пароль","pass",[requiredField, maxLenght],InputControl,{type:"password"})}
+            ("Пароль","pass",[requiredField, maxLenght],InputControl,checkModeButton?
+            {type:"password",checkModeButton,soldCheckbox}:{checkModeButton,soldCheckbox})}
         </div>
     </Row>
     <Row align="end"  style={{ height: '60px' }} >

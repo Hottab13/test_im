@@ -2,6 +2,8 @@ import { FiledValidatoeType } from '../../utils/validators';
 import React from "react";
 import { Field, WrappedFieldMetaProps, WrappedFieldProps } from "redux-form";
 import styles from "./FormControl.module.css"
+import cl from "../../Login/Login.module.css"
+import "../../Login/Login.module.css"
 
 type FormControlPropsType={
     meta:WrappedFieldMetaProps
@@ -23,7 +25,21 @@ export const Texteria:React.FC<WrappedFieldProps>=(props)=>{
 } 
 export const InputControl:React.FC<WrappedFieldProps>=(props)=>{
     const  {input,meta,...restProps} = props
-    return<FormControl {...props}><input className={styles.login} {...restProps} {...input}/></FormControl>
+    return<FormControl {...props}><div className={cl.textContainer}>
+    <input className={styles.login} {...restProps} {...input}/>
+    {
+        //@ts-ignore
+    props.type || props.checkModeButton===false ?
+    <span className={cl.btn}> 
+        <input checked={
+            //@ts-ignore
+            props.checkModeButton} onChange={
+                //@ts-ignore
+                props.soldCheckbox}  type="checkbox"  id="checkbox-id" />
+        <label htmlFor="checkbox-id"/>
+    </span>
+    :""}</div>
+    </FormControl>
 } 
 
 export function createField<FormKeysType extends string>(placeholder:string| undefined |any ,

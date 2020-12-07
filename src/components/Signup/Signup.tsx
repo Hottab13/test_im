@@ -17,7 +17,6 @@ const LoginForm:React.FC<InjectedFormProps<LoginFormValueType,LoginFormOwnProps>
 const [checkModeButton,setCheckModeButton] =  useState (true)
 //@ts-ignore
 const soldCheckbox = ({ target: { checked } }) => {
-    console.log(checkModeButton, checked);
     setCheckModeButton(checked);
 }
 return <form onSubmit={handleSubmit}>
@@ -51,14 +50,14 @@ return <form onSubmit={handleSubmit}>
             <div className={cl.centrBut}>
             {createField<LoginFormValueTypeKey>
             ("Введите пароль","pass",[requiredField, maxLenght],InputControl,checkModeButton?
-            {type:"password"}:"")}
+            {type:"password",checkModeButton,soldCheckbox}:{checkModeButton,soldCheckbox})}
             </div>
         </Row>
         <Row align="end" style={{ height: '50px' }}>
             <div className={cl.centrBut}>
             {createField<LoginFormValueTypeKey>
             ("Повторите пароль","confirmPassword",[requiredField, matchPass],InputControl,checkModeButton?
-            {type:"password"}:"")}
+            {type:"password",checkModeButton,soldCheckbox}:{checkModeButton,soldCheckbox})}
             </div>
         </Row>
         <Row align="end"  style={{ height: '60px' }} >
@@ -71,10 +70,10 @@ return <form onSubmit={handleSubmit}>
            Уже зарегистрированы? <Link to="/login" className={cl.sing} >Вход</Link>
             </Col>
         </Row>
-        <div> 
+        {/*<span> 
             <input type="checkbox" checked={checkModeButton} onChange={soldCheckbox} id="checkbox-id" />
             <label htmlFor="checkbox-id"/>
-        </div>
+        </span>*/}
         <Row align="end" style={{ height: '120px'}}>
         {error &&<div className={cl.error}>
             <img src={errorIcon} style={{paddingLeft:"48px",top:"50%",

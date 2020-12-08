@@ -1,10 +1,8 @@
 .wrapper{
-background-image:url(../../assets/SVG/bgedituser.svg); 
-background-size: 100%, 100%, contain;
+background:#EBF2FB;
+background-size: 100%, 100%;
 background-repeat: no-repeat;
-    background-position: right top;
-   /* background-attachment: fixed;
-/*height:1064px;*/
+background-position: right top;
 }
 /*меню*/
 .menu{

@@ -1,6 +1,6 @@
 .wrapper{
 background-image:url(../../assets/SVG/bgcolor.svg); 
-background-size: 100%, 100%, contain;
+background-size: 100%, 100%;
 background-repeat: no-repeat;
 background-position: right top;
 background-attachment: fixed;

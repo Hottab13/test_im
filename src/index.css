@@ -9,6 +9,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-track {
+  background-color: #AFB9D7;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background:#8B99C9;
+  background-repeat:no-repeat;
+  width:12px;
+  height:266.67px;
+  border-radius: 20px;
+}
+  
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New','Open Sans',
     monospace;

@@ -37,9 +37,9 @@ useEffect(()=>{
 if(!isAuth){
     return <Redirect to={"/login"}/>
 }
-    return <Container fluid className={cnu.wrapper}>  
+    return <Container fluid className={cnu.wrapper} >  
     {editMode &&     
-<Row className={cnu.menu}  >
+<Row className={cnu.menu}>
     <Col md={2}  className={cnu.menuMod} >
         <Row align="center" style={{height:"60px",background: "#535374"}} onClick ={deactivEditMode}>
             <Col md={1} offset={{ md: 1 }}  >

@@ -1,10 +1,10 @@
-@import  "../node_modules/fontsource-open-sans/700-normal.css" ;
-@import  "../node_modules/fontsource-open-sans/400-normal.css" ;
+@import "../node_modules/fontsource-open-sans/700-normal.css";
+@import "../node_modules/fontsource-open-sans/400-normal.css";
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Open Sans',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -14,19 +14,18 @@ body {
   border-radius: 2px;
 }
 ::-webkit-scrollbar-track {
-  background-color: #AFB9D7;
+  background-color: #afb9d7;
   border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb {
-  background:#8B99C9;
-  background-repeat:no-repeat;
-  width:12px;
-  height:266.67px;
+  background: #8b99c9;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 266.67px;
   border-radius: 20px;
 }
-  
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New','Open Sans',
-    monospace;
-}
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    "Open Sans", monospace;
+}

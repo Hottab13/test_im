@@ -1,29 +1,26 @@
 .formControl.error input,
-.formControl.error textarea
-{
-    /*бордер инпута*/
-    border: solid  1px;
-    color: #EE4141;
+.formControl.error textarea {
+  /*бордер инпута*/
+  border: solid 1px;
+  color: #ee4141;
 }
-.formControl.error span
-{
-    /*текст ошибок*/
-    /*position: relative;*/
-    color: #EE4141;
-    /*border-top: 25px;*/
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-    display: flex ;
-    /*align-items: center;*/
-    margin-top: -7px;
-    
+.formControl.error span {
+  /*текст ошибок*/
+  /*position: relative;*/
+  color: #ee4141;
+  /*border-top: 25px;*/
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  /*align-items: center;*/
+  margin-top: -7px;
 }
 
-.error{
-    /*padding-bottom: 10px;
+.error {
+  /*padding-bottom: 10px;
     background: #F5F5F5;
     box-sizing: border-box;
     font-family: font-face;
@@ -36,37 +33,37 @@
     color: #333333;*/
 }
 input.login {
-    /*инпут по дефолту*/
-    width:328px;
-    height:36px;
-    background: #FFFFFF;
-    border: 1px solid #D6DCE9;
-    box-sizing: border-box;
-    border-radius: 4px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-    outline-style: none;
-    color: #6879BB;
+  /*инпут по дефолту*/
+  width: 328px;
+  height: 36px;
+  background: #ffffff;
+  border: 1px solid #d6dce9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  outline-style: none;
+  color: #6879bb;
 }
 input.login:hover {
-    /*фокус на инпуте*/
-    width:328px;
-    height:36px;
-    border: 1px solid #415FD5;
-    box-sizing: border-box;
-    border-radius: 4px;
+  /*фокус на инпуте*/
+  width: 328px;
+  height: 36px;
+  border: 1px solid #415fd5;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 input.login:active {
-    /*активный инпут*/
-    width:328px;
-    height:36px;
-    background: #FFFFFF;
-    border: 1px solid #415FD5;
-    box-sizing: border-box;
-    border-radius: 4px;
+  /*активный инпут*/
+  width: 328px;
+  height: 36px;
+  background: #ffffff;
+  border: 1px solid #415fd5;
+  box-sizing: border-box;
+  border-radius: 4px;
 }

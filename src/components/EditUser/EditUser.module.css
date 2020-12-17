@@ -1,132 +1,119 @@
-.wrapper{
-background:#EBF2FB;
-background-size: 100%, 100%;
-background-repeat: no-repeat;
-background-position: right top;
+.wrapper {
+  background: #ebf2fb;
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
 }
-/*меню*/
-.menu{
-background: #FFFFFF;
-box-shadow: 0px 1px 10px rgba(104, 121, 187, 0.1);
-height:60px;
-position: relative;
-  /*left: 0;
-  top: 0;*/
+.menu {
+  background: #ffffff;
+  box-shadow: 0px 1px 10px rgba(104, 121, 187, 0.1);
+  height: 60px;
+  position: relative;
 }
-.menuMod{
-    z-index: 100;
-    width: 224px;
-    height:1064px;
-    background: #404064;
-    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.3);  
+.menuMod {
+  z-index: 100;
+  width: 224px;
+  height: 1064px;
+  background: #404064;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.3);
 }
-.menuModMask{
-    z-index: 100;
-    background: #20262B;
-    opacity: 0.5;
-    /*background-image:url(../../assets/SVG/mask.svg); */
-    background-size: 100%, 100%, contain;
-    background-repeat: no-repeat;
-    /*background-position: right top;*/
-    background-attachment: fixed;
+.menuModMask {
+  z-index: 100;
+  background: #20262b;
+  opacity: 0.5;
+  background-size: 100%, 100%, contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.menuBackground{
-    background: #404064;
-    /*height:1064px;*/
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;
+.menuBackground {
+  background: #404064;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
 }
-.menuIcon{ 
-top:50%;
-transform: translate(0,100%);
-margin-left: 13px;
+.menuIcon {
+  top: 50%;
+  transform: translate(0, 100%);
+  margin-left: 13px;
 }
-P.menuText{
-font-family: "Open Sans";
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 19px;
-display: flex;
-align-items: center;
-color: #6879BB;
+P.menuText {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #6879bb;
 }
- .menuModText{
-font-family: "Open Sans";
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 19px;
-display: flex;
-align-items: center;
-color: #FFFFFF;
- } 
-/*меню*/
-.editForm{
-/*margin-left:52px;
-/*margin-right:52px;*/
-height: 288px;
-background: #FFFFFF;
-/*box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);*/
-border-radius: 2px;
+.menuModText {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
 }
-.name{
-/*width:840,5px;*/
-height:48px;
-font-family:"Open Sans";
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 35px;
-display: flex;
-align-items: center;
-color: #404064;
-top:50%;
-transform: translate(0,50%);
+.editForm {
+  height: 288px;
+  background: #ffffff;
+  border-radius: 2px;
 }
-/*кастомные кнопки*/
+.name {
+  height: 48px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  color: #404064;
+  top: 50%;
+  transform: translate(0, 50%);
+}
 button.button:default {
-    width: 116px;
-    height: 36px;
-    background: #FFCE0C;
-    border-color:#FFCE0C;
-    border-radius: 4px;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-    top:50%;
-    transform: translate(0,80%);
-    float: right;
-  } 
+  width: 116px;
+  height: 36px;
+  background: #ffce0c;
+  border-color: #ffce0c;
+  border-radius: 4px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  top: 50%;
+  transform: translate(0, 80%);
+  float: right;
+}
 button.button:hover {
-    width: 116px;
-    height: 36px;
-    background: #FFD73B;
-    border-color:#FFCE0C;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-   }
+  width: 116px;
+  height: 36px;
+  background: #ffd73b;
+  border-color: #ffce0c;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
 button.button:active {
-    width: 116px;
-    height: 36px;
-    background: #FFCE0C;
-    border-color:#FFCE0C;
-    border: 1px solid #FFFBEA;
-    box-sizing: border-box;
-    box-shadow: 0px 1px 10px #FFD73B;
-    border-radius: 4px;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-  }
-/*кастомные кнопки*/
+  width: 116px;
+  height: 36px;
+  background: #ffce0c;
+  border-color: #ffce0c;
+  border: 1px solid #fffbea;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 10px #ffd73b;
+  border-radius: 4px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}

@@ -1,81 +1,80 @@
-.pla{
-margin-left: 22px;
-margin-right: 22px;
-height:274px;
-background: #FFFFFF;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-border-radius: 2px;
-width: 100%;
-margin-top: 12px;
+.pla {
+  margin-left: 22px;
+  margin-right: 22px;
+  height: 274px;
+  background: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  width: 100%;
+  margin-top: 12px;
 }
-.textName{
-  margin-left:24px;
-font-family:'Open Sans';
-font-style: normal;
-font-weight: bold;
-font-size: 22px;
-line-height: 30px;
-display: flex;
-align-items: center;
-color: #6879BB;
-top:50%;
-transform: translate(0,50%);
+.textName {
+  margin-left: 24px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #6879bb;
+  top: 50%;
+  transform: translate(0, 50%);
 }
-.textProcess{
-  font-family: 'Open Sans';
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 16px;
-display: flex;
-align-items: center;
-color: #6879BB;
-top:50%;
-transform: translate(0,150%);
-right: 25px;
-float: right;
-margin-right: 24px;
+.textProcess {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #6879bb;
+  top: 50%;
+  transform: translate(0, 150%);
+  right: 25px;
+  float: right;
+  margin-right: 24px;
 }
-.numberOfScenarios{
-  font-family: 'Open Sans';
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 35px;
-display: flex;
-align-items: center;
-color: #535374;
-top:50%;
-transform: translate(0,200%);
+.numberOfScenarios {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  color: #535374;
+  top: 50%;
+  transform: translate(0, 200%);
 }
-.miniText{
-  font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-display: flex;
-align-items: center;
-color: #999999;
+.miniText {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #999999;
 }
-.textScripts{
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 25px;
-display: flex;
-align-items: center;
-color: #535374;
+.textScripts {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #535374;
 }
-.textMoment{
-  font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-display: flex;
-align-items: center;
-color: #333333;
+.textMoment {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #333333;
 }
-

@@ -1,166 +1,184 @@
-.wrapper{
-background: linear-gradient(229.77deg, #6879BB 2.47%, #9300BB 95.42%);
-background-size: 100%, 100%;
-background-repeat: no-repeat;
-background-position: right top;
-background-attachment: fixed;
+.wrapper {
+  background: linear-gradient(229.77deg, #6879bb 2.47%, #9300bb 95.42%);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
 }
-.login_wr{
-width:424px;
-height: 656px;
-background: #FFFFFF;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-border-radius: 2px;
-left: 0%;
-right: 0%;
-margin: 0 auto;
+
+.login_wr {
+  width: 424px;
+  height: 656px;
+  background: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  left: 0%;
+  right: 0%;
+  margin: 0 auto;
 }
-.logo{
-width: 150.51px;
-height: 47.88px;
-left: 607px;
-top: 32px;
-left: 0%;
-right: 0%;
-margin: 0 auto;
+
+.logo {
+  width: 150.51px;
+  height: 47.88px;
+  left: 607px;
+  top: 32px;
+  left: 0%;
+  right: 0%;
+  margin: 0 auto;
 }
-.centrBut{
-width: 328px;
-height: 36px;
-left: 0%;
-right: 0%;
-margin: 0 auto;
-align-items: center;
-color: #CCCCCC;
-  
+
+.centrBut {
+  width: 328px;
+  height: 36px;
+  left: 0%;
+  right: 0%;
+  margin: 0 auto;
+  align-items: center;
+  color: #cccccc;
 }
-.textContainer{
+
+.textContainer {
   display: inline-block;
   position: relative;
   overflow: hidden;
 }
+
 .btn {
   position: absolute;
   top: 0px;
   left: 304px;
   float: right;
 }
-.singup{
-width: 140px;
-height: 19px;
-padding-left: 48px;
-font-family: "Open Sans";
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 19px;
-display: flex;
-align-items: center;
-color: #3167BA;
-text-decoration: none;
+
+.singup {
+  width: 140px;
+  height: 19px;
+  padding-left: 48px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #3167ba;
+  text-decoration: none;
 }
-.sing{
-font-family: "Open Sans";
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 19px;
-/*margin-re: 60px;*/
-color: #3167BA; 
-text-decoration: none; 
-/*float: left;*/
+
+.sing {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  /*margin-re: 60px;*/
+  color: #3167ba;
+  text-decoration: none;
+  /*float: left;*/
 }
-.singPlank{
-font-family: "Open Sans";
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 19px;
+
+.singPlank {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
 }
+
 /*кастомизация кнопок*/
 button.button:default {
-background: #FFCE0C;
-border-color:#FFCE0C;
-border-radius: 4px;
-width: 328px;
-height: 36px;
-font-family: "Open Sans";
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 16px;
-outline-style: none;
-align-items: center;
-text-align: center;
-color: #333333;
-} 
+  background: #ffce0c;
+  border-color: #ffce0c;
+  border-radius: 4px;
+  width: 328px;
+  height: 36px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  outline-style: none;
+  align-items: center;
+  text-align: center;
+  color: #333333;
+}
+
 button.button:hover {
-background: #FFD73B;
-border-color:#FFCE0C;
-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
-width: 328px;
-height: 36px;
-outline-style: none;
+  background: #ffd73b;
+  border-color: #ffce0c;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  width: 328px;
+  height: 36px;
+  outline-style: none;
 }
+
 button.button:active {
-background: #FFCE0C;
-border-color:#FFCE0C;
-border: 1px solid #FFFBEA;
-box-sizing: border-box;
-box-shadow: 0px 1px 10px #FFD73B;
-border-radius: 4px;
-width: 328px;
-height: 36px;
+  background: #ffce0c;
+  border-color: #ffce0c;
+  border: 1px solid #fffbea;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 10px #ffd73b;
+  border-radius: 4px;
+  width: 328px;
+  height: 36px;
 }
+
 /*кастомизация кнопок*/
-.error{
-background: #FFE9DB;
-height: 96px;
-width:424px;
+.error {
+  background: #ffe9db;
+  height: 96px;
+  width: 424px;
 }
-.errorText{
-top:50%;
-transform: translate(0,-50%);
-padding-left: 120px;
-font-family: "Open Sans";
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 19px;
-display: flex;
-align-items: center;
-color: #333333;
+
+.errorText {
+  top: 50%;
+  transform: translate(0, -50%);
+  padding-left: 120px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #333333;
 }
-.signText{   
-font-family: "Open Sans";
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 25px;
-display: flex;
-align-items: center;
-color: #404064;
+
+.signText {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #404064;
 }
+
 /*кастомизация checkbox */
 input[type="checkbox"] {
-display: none;
+  display: none;
 }
-label {
-}
+
+label {}
+
 label:before {
-content: " ";
-border-image: initial;
-width: 12px;
-height: 5px;
-display: inline-block;
+  content: " ";
+  border-image: initial;
+  width: 12px;
+  height: 5px;
+  display: inline-block;
 }
-input:checked + label:before {
-background-image:url(../../assets/icon/EyeVisible.svg ); 
-background-size:cover;
+
+input:checked+label:before {
+  background-image: url(../../assets/icon/EyeVisible.svg);
+  background-size: cover;
 }
-input + label:before {
-background-image:url(../../assets/icon/EyeInvisible.svg); 
-  background-size:cover;
+
+input+label:before {
+  background-image: url(../../assets/icon/EyeInvisible.svg);
+  background-size: cover;
 }
+
 /*кастомизация checkbox */
